@@ -1,7 +1,7 @@
 <?php
   include 'top.php';
 
-  $metnames = array('First time', 'Beginner', 'Intermediate', 'Expert');
+  $metnames = array('Florence Pugh', 'Kim K', 'Jacob Elordi', 'Rihanna');
 
   $dataIsGood = false;
   $errorMessage = '';
