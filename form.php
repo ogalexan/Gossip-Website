@@ -1,19 +1,19 @@
 <?php
   include 'top.php';
 
-  $experiences = array('First time', 'Beginner', 'Intermediate', 'Expert');
+  $metnames = array('First time', 'Beginner', 'Intermediate', 'Expert');
 
   $dataIsGood = false;
   $errorMessage = '';
-  $experience = '';
+  $met = '';
   $name = '';
   $email = '';
   $song = '';
   $enthusiasm = '';
-  $improvePark = 0;
-  $improveSpeed = 1;
-  $improveTurns = 0;
-  $improveJumps = 0;
+  $seeFashion = 0;
+  $seeLove = 1;
+  $seeMusic = 0;
+  $seeCapitol = 0;
 
   function getData($field){
     if (!isset($_POST[$field])) {
@@ -46,10 +46,10 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     print PHP_EOL . '<!-- Starting Validation -->' . PHP_EOL;
     $dataIsGood = true;
 
-    if($experience == ''){
+    if($met == ''){
         $errorMessage .= '<p class="mistake">Please choose an experience level</p>';
         $dataIsGood = false;
-    }elseif(!in_array($experience, $experiences)){
+    }elseif(!in_array($met, $metnames)){
         $errorMessage .= '<p class="mistake">Please choose an experience level</p>';
         $dataIsGood = false;
     } 
@@ -128,9 +128,9 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     <h1>Mostly For Our Benefit...</h1>
     <section>
         <figure class="rounded">
-            <img class="rounded" alt="Boarder in Air"
-            src="image/snowboarding.jpg">
-            <figcaption><cite>Boarder Mid Air</cite></figcaption>
+            <img class="rounded" alt="Faces you should know"
+            src="images/hollywood.jpg">
+            <figcaption><cite></cite></figcaption>
         </figure>
         <h2>Survey</h2>
         <p>We want to hear from our readers!</p>   
@@ -151,32 +151,31 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     <section>
         <h2></h2>
 
-        <form action="#" id="ExperienceLvl" method="post">
+        <form action="#" id="METLvl" method="post">
 
             <fieldset class="listbox">
-                <legend>Experience Level</legend>
+                <legend>Whose MET Glam are you most hype to see</legend>
                 <p>
-                    <select id="lstExperiences" name="lstExperiences" tabindex="120">
+                    <select id="lstMET" name="lstMET" tabindex="120">
                         <option 
-                        <?php if($experience == "First time") print 'selected'; ?>
-                        value="First time">First time</option>
+                        <?php if($met == "Florence Pugh") print 'selected'; ?>
+                        value="Florence Pugh">Florence Pugh</option>
                         <option 
-                        <?php if($experience == "Beginner") print 'selected'; ?>
-                        value="Beginner">Beginner</option>
+                        <?php if($met == "Kim K") print 'selected'; ?>
+                        value="Kim K">Kim K</option>
                         <option 
-                        <?php if($experience == "Intermediate") print 'selected'; ?>
-                        value="Intermediate">Intermediate</option>
+                        <?php if($met == "Jacob Elordi") print 'selected'; ?>
+                        value="Jacob Elordi">Jacob Elordi</option>
                         <option 
-                        <?php if($experience == "Expert") print 'selected'; ?>
-                        value="Expert">Expert</option>
+                        <?php if($met == "Rihanna") print 'selected'; ?>
+                        value="Rihanna">Rihanna</option>
                     </select>
                 </p>
             </fieldset>
 
             <fieldset class="textarea">
                 <p>
-                    <label for="txtExperience"> Tell us what you are missing, are they're any 
-                        snowboarding tips and tricks we missed. Do you have any questions?</label>
+                    <label for="txtExperience"> Got any fun Gos? We want to hear from you!</label>
                     <textarea id="txtExperience" name="txtExperience"
                     tabindex="200"><?php print $experience; ?></textarea>
                 </p>
@@ -199,7 +198,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
                 </p>
 
                 <p>
-                    <label class="required" for="txtSong">Your song of choice cruising down the mountain</label>
+                    <label class="required" for="txtSong">Your take a drive song</label>
                     <input id="txtSong" maxlength="30"
                     name="txtSong" onfocus="this.select()"
                     tabindex="310" type="text" value="<?php print $song; ?>" required>
