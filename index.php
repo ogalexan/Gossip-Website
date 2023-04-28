@@ -3,7 +3,7 @@
   ?>
 
 <main>
-    <h1></h1>
+    <h1>Drama on the Hill</h1>
 
     <section>
         <h2></h2>
@@ -13,29 +13,28 @@
     <section>
         <h3></h3>
         <figure class="rounded">
-            <img class="rounded" alt="Boarding" src="image/snowboarding.jpg">
-            <figcaption><cite><a href="https://www.vacationstravel.com/10-simple-snowboarding-tricks/vt-featured-size-35/"
-            target="_blank">Aspiring Snowboard Trick</a></cite></figcaption>
-
+            <img class="rounded" alt="Oscar Isaac" src="images/show-me.jpg">
+            <figcaption><cite><a href="https://www.pastemagazine.com/tv/tv-politics/the-best-political-tv-shows-of-all-time"
+            target="_blank">Oscar Isaac starring in Show Me a Hero</a></cite></figcaption>
         </figure>
     </section>
 
 
     <section>
-        <h2></h2>
-        <p></p>
+        <h2>Looking for a new political drama?</h2>
+        <p>Here's a list of some classic political movies and tv shows.</p>
 
         <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Veep</li>
+            <li>The West Wing</li>
+            <li>The Wire</li>
+            <li>Parks and Recreation</li>
+            <li>The Good Fight</li>
+            <li>House of Cards</li>
+            <li>Deadwood</li>
+            <li>The Expanse</li>
+            <li>Battlestar Galactica</li>
+            <li>Show Me a Hero</li>
 
         </ol>
     </section>
