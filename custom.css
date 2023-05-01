@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cochin; 
+  }
+  
+  body{
+    max-width: 60em;
+    width: 90%;
+    margin: auto;
+    background-color: rgba(255,255,255, 1);
+  }
+  
+  html{
+      background-image: url(../images/vermont-recycling.png);
+    }
+  
+  h1{
+    text-transform: uppercase;
+    font-size: 170%;
+  }
+  
+  h2{
+    padding: 1em;
+  }
+  
+  p{
+    text-indent: 5%;
+    padding: 1em;
+  }
+
+  li{
+    padding: .5em;
+    margin-left: 3em;
+  }
+  
+  img {
+    max-width: 70%;
+    border-radius: 50em;
+    padding: .5em;
+    border: .1em dotted green;
+  }
+
+  nav a:link{
+    color: #009;
+    text-decoration: none;
+  }
+
+  nav a:visited{
+    text-decoration: none;
+    color: #009;
+  }
+  
+  nav a:hover{
+    background-color: gainsboro;
+    color: plum;
+    text-decoration: underline;
+  }
+
+  nav a{
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+  
+  nav{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 1%;
+    background-color: pink;
+    border-bottom: magenta;
+    border-top: magenta;
+    border-left: magenta;
+    border-right: magenta;
+  }
+
+  li{ 
+    list-style-type: square;
+  }
+  
+  ul{
+    display: inline;
+  }
+  
+  table{
+    font-weight: normal;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+  }
+  
+  table th, td{
+    border-bottom: .3em solid black;
+    border-left: .3em solid black;
+    border-right: .3em solid black;
+    border-top: .3em solid black;
+    padding: 2em;
+    text-align: center;
+  }
+  
+  table tr:nth-child(even){
+    background-color: #f2f2f2;
+  }
+  
+  table tr:nth-child(odd){
+    background-color: beige;
+  }
+  
+  table tr:hover{
+    background-color: #ddd;
+  }
+  
+  caption{
+    caption-side: bottom;
+  }
+  
+  li:nth-child(odd){
+    color: darkmagenta;
+  }
+  
+  li:nth-child(even){
+    color: darkblue;
+  }
+  
+  /* form styling */
+  
+  form{
+    background-color:rgba(255,255,255, 1);
+    /* border: thin solid black; */
+    clear: both;
+    margin: auto;
+    padding: 2em;
+  }
+  
+  form p{
+    text-indent: 0;
+  }
+
+  fieldset{
+    padding: 1em;
+  }
+  
+  fieldset.contact{
+    margin-top: -1em;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 1em;
+    display: grid;
+    border: .3em solid #ccc;
+    border-radius: 2%;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    display: grid;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    margin: 2%;
+    cursor: pointer;
+  }
+
+  legend{
+    margin-top: 1em;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  main {
+    display: grid;
+    grid-template-areas: "box1 box1" "box4 box2" "box3 box3";
+    grid-template-columns: auto 35%;
+    grid-gap: 1em
+  }
+  
+  .form main {
+    grid-template-areas: "box1 box1" "box2 box2" "box3 box3";
+  }
+  
+  main h1:first-child {
+    grid-area: box1;
+  }
+  
+  main section:nth-child(2) {
+    grid-area: box2;
+  }
+  
+  main section:nth-child(3) {
+    grid-area: box3;
+  }
+  
+  main section:nth-child(4) {
+    grid-area: box4;
+  }
+
+  .activePage{
+    border-top: solid black; 
+    border-right: solid black; 
+    border-left: solid black;
+    border-bottom: solid black; 
+  }
