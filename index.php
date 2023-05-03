@@ -1,12 +1,21 @@
 <?php
   include 'top.php';
-  ?>
+
+$actorsTable = array(
+    array('Jennifer Lawrence', 'Causeway', 'Don\'t Look Up', 'The Hunger Games'),
+    array('Timothee Chalamet', 'Little Women', 'Lady Bird', 'Call Me By Your Name'),
+    array('Paul Mescal', 'Carmen', 'The Lost Daughter', 'Normal People'),
+    array('Kate Blanchett', 'Tar', 'Where\'d You Go Bernadette', 'Ocean\'s 8'),
+    array('Angela Bassett', 'Black Panther: Wakanda Forever', 'Wendell & Wild ','Otherhood') 
+);
+?>
+
 
 <main>
     <h1>Drama on the Hill</h1>
 
     <section>
-        <h2></h2>
+        <h2>Depiction of Politics in Film</h2>
         <p></p>
     </section>
 
@@ -39,38 +48,30 @@
         </ol>
     </section>
 
-    <section class=table>
-        <h2>Snowboard Table</h2>
+    <section>
+    <h2>Newest <?php print count($actorsTable); ?> trends</h2>
         <table>
-            <caption>Skill level and Board sizing</caption>
-
             <tr>
-                <th>Level</th>
-                <th>Skills</th>
-                <th>Board Size</th>
+                <th>Your Fav Actor/Actress! </th>
+                <th>Top Hits!</th>
+                <th></th>
+                <th></th>
             </tr>
-<?php
-$sql = 'SELECT fldLevel, fldSkills, fldSize FROM tblBoardSize';
-$statement = $pdo->prepare($sql);
-$statement->execute();
-
-$records = $statement->fetchAll();
-
-foreach($records as $record){
-    print '<tr>';
-    print '<td>' . $record['fldLevel'] . '</td>';
-    print '<td>' . $record['fldSkills'] . '</td>';
-    print '<td>' . $record['fldSize'] . '</td>';
-    print '<tr>' . PHP_EOL;
-}
-?>
-
+    <?php
+    foreach ($actorsTable as $actorTable) {
+        print '<tr>';
+        print '<td>' . $actorTable [0] . '</td>';
+        print '<td>' . $actorTable [1] . '</td>';
+        print '<td>' . $actorTable [2] . '</td>';
+        print '<td>' . $actorTable [3] . '</td>';
+        print '</tr>' . PHP_EOL;
+    }
+    ?>
             <tr>
-                <td colspan="3">Source: <cite><a href="https://snowboardingprofiles.com/what-size-snowboard-do-i-need-the-critical-factors-for-snowboard-fit" 
-                target="_blank">https://snowboardingprofiles.com/what-size-snowboard-do-i-need-the-critical-factors-for-snowboard-fit</a></cite></td>
-            </tr>   
-        </table>
-    </section>
+                <td colspan="5"><cite>Data from IMbD<a href="https://www.imdb.com/news/ni63707932" target="blank">Editors Picks</cite></a>
+            </tr>
+    </table>
+</section>
 
 </main>
 
