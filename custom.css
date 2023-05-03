@@ -127,54 +127,92 @@
   }
   
   /* form styling */
-  
-  form{
-    background-color:rgba(255,255,255, 1);
-    /* border: thin solid black; */
+
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: thin solid black;
     clear: both;
+    max-width: 30em;
     margin: auto;
-    padding: 2em;
-  }
-  
-  form p{
+    padding: 1%
+}
+
+form p {
     text-indent: 0;
-  }
+}
 
-  fieldset{
-    padding: 1em;
-  }
-  
-  fieldset.contact{
+fieldset {
+    padding: 1%;
+}
+
+fieldset.contact {
     margin-top: -1em;
-  }
-  
-  input[type=text], select {
-    width: 100%;
-    padding: 1em;
-    display: grid;
-    border: .3em solid #ccc;
-    border-radius: 2%;
-    box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    display: grid;
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 1em;
-    text-decoration: none;
-    margin: 2%;
-    cursor: pointer;
-  }
 
-  legend{
-    margin-top: 1em;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
+}
+
+input[type=sumbit] {
+    background: darkblue;
+    color: whitesmoke;
+    font-size: x-large;
+    padding: 1%;
+}
+
+label {
+    display: block;
+}
+
+.radio label, 
+.checkbox label {
+    display: inline;
+}
+
+.radio legend, 
+.checkbox legend, 
+.contact legend {
+    padding-top: 1.5em;
+}
+
+.radio, 
+.checkbox, 
+.contact {
+    background-color:pink;
+}
+
+.radio input, 
+.checkbox input {
+    width: initial;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+legend {
+    margin-top: 1%;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 3em;
+    padding-bottom: 1em;
+}
+
+ol {
+    margin: 1em;
+}
+
+/** main styling **/
   
   main {
     display: grid;
