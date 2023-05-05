@@ -12,6 +12,7 @@
   }
   
   html{
+    /*background-image: url(../images/vermont-recycling.jpg);*/
       background-color: black;
     }
   
@@ -222,7 +223,7 @@ ol {
   }
   
   .form main {
-    grid-template-areas: "box1 box1" "box2 box2" "box3 box3";
+    grid-template-areas: "box1 box2" "box3 box2" "box1 box1";
   }
   
   main h1:first-child {
