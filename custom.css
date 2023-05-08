@@ -9,6 +9,8 @@
     width: 90%;
     margin: auto;
     background-color: rgba(255,255,255, .6);
+    grid-template-areas: "nav nav" "header header" "info1 info2" "info3 info4" "footer footer";
+
   }
   
   html{
@@ -23,6 +25,7 @@
   
   h2{
     padding: 1em;
+    color: darkblue;
   }
   
   p{
@@ -73,8 +76,14 @@
     border-top: magenta;
     border-left: magenta;
     border-right: magenta;
+    grid-area : nav;
   }
-
+/**
+  header{
+    background: cornflowerblue;
+    grid-area: header;
+  }
+*/
   li{ 
     list-style-type: square;
   }
@@ -201,7 +210,10 @@ legend {
 }
 
 img {
-    max-width: 100%;
+    border-radius: 4px;
+    padding: 5px;
+    border: 2px dotted magenta;
+    width: 90%;
 }
 
 p {
@@ -217,29 +229,51 @@ ol {
   
   main {
     display: grid;
-    grid-template-areas: "box1 box2" "box4 box2" "box3 box3";
-    grid-template-columns: auto 35%;
+    grid-template-areas: "info1 info2" "info3 info4";
+    grid-template-columns: auto auto;
     grid-gap: 1em
   }
+
+  /**
+  nav nav 
+  header header 
+  figure1 figure2 
+  info1 info2
+  footer footer
+  /
+  **/
+
+.index main {
+  grid-template-areas: "info3 info4" "info2 info1";
+}
+
+.array main {
+  grid-template-areas: "info1 info2" "info3 info3";
+}
+
+.detail main {
+  grid-template-areas: "info2 info1 info3" "info4 info1 info5";
+}
   
-  .form main {
-    grid-template-areas: "box1 box2" "box3 box2" "box1 box1";
-  }
+ h1{
+  background: cornflowerblue;
+  grid-area: header;
+}
   
-  main h1:first-child {
-    grid-area: box1;
+  main section:nth-child(1) {
+    grid-area: info1;
   }
   
   main section:nth-child(2) {
-    grid-area: box2;
+    grid-area: info2;
   }
   
   main section:nth-child(3) {
-    grid-area: box3;
+    grid-area: info3;
   }
-  
+
   main section:nth-child(4) {
-    grid-area: box4;
+    grid-area: info4
   }
 
   .activePage{
