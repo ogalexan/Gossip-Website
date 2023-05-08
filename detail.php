@@ -1,11 +1,11 @@
 <?php
   include 'top.php';
 ?>
-<main>
-    <h1>This Week's Stories brought to you by Rachel Amster and Olivia Alexander</h1>
 
+    <h1>This Week's Stories brought to you by Rachel Amster and Olivia Alexander</h1>
+    
+    <main>
     <section>
-        <h2>Maggie Swanbord</h2>
         <figure class="rounded">
         <img class="rounded" alt="Gossip" src="images/gossip.jpg">
         <figcaption>You don't exist until they talk about you</figcaption>
@@ -38,9 +38,13 @@
     <section>
         <h2>Sofia Richie and Elliot Grainge are married!</h2>
         <p>The 24-year-old model and designer, who is also the youngest child of legendary singer Lionel Richie (nepo baby alert!) had her star-studded wedding at Hotel du Cap-Eden-Roc in the dreamy South of France. From Justin Bieber to Scott Disick, she's finally found the one. And now she's our new it girl</p>
+    </section> 
 
-        <p>colspan="3">Source: <cite><a hred="https://hollywoodlife.com/wp-content/uploads/2023/04/Sofia-Richie-Wedding-Dress-MEGA-embed-1.jpg" 
-        target="_blank">https://hollywoodlife.com/wp-content/uploads/2023/04/Sofia-Richie-Wedding-Dress-MEGA-embed-1.jpg</a></cite></p>   
+    <section>
+        <figure class="rounded">
+        <img class="rounded" alt="Gossip" src="images/wedding.jpg">
+        <figcaption>The Royal Wedding (for the U.S.)</figcaption>
+        </figure>  
     </section>  
 </main>
 
