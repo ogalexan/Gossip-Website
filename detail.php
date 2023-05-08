@@ -14,13 +14,13 @@
 
     <section>
         <h2>Everything You Need to Know About the 2023 Met Gala</h2>
-        <p>Where and when is the Gala?
-            The 2023 Met Gala will be held in New York City on May 1 at 6:30 PM. 
-            What is the theme?
-            The theme is “In Honor of Karl" and will serve as a celebration of Karl Lagerfeld’s work throughout his lifetime.  
-            Who are the hosts?
-            Penélope Cruz, Dua Lipa, Roger Federer and Michaela Coel.
-            Can't wait to witness which controversies we'll see this year!</p>
+        <p>Where and when is the Gala?</p>
+        <p>According to tradition, the 2023 Met Gala will be held in New York City on May 1 at 6:30 PM.</p> 
+        <p>What is the theme?</p>
+        <p>The theme is “In Honor of Karl" and will serve as a celebration of Karl Lagerfeld’s work throughout his lifetime. Karl Lagerfeld was a world-renowned designer who led fashion industries such as Chanel and Fendi.</p>
+        <p>Who are the hosts?</p>
+        <p>This year's offcial Met Gala co-hosts are, Penélope Cruz, Dua Lipa, Roger Federer, Michaela Coel, and of course Vogue's Anna Wintour.</p>
+        <p>Can't wait to witness which controversies we'll see this year!</p>
     </section>
 
     <section>

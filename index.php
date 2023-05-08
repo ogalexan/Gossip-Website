@@ -11,12 +11,12 @@ $actorsTable = array(
 ?>
 
 
-<main>
     <h1>Drama on the Hill</h1>
-
+    
+    <main>
     <section>
         <h2>Depiction of Politics in Film</h2>
-        <p></p>
+        <p>Politics has played a role in movies since the dawn of cinema. They play a key role in the story line for films of all types and often reflect where we are as a nation. Political films portray various society conditions and partisan perspectives. Normally,people are drawn to political films because they are a reflection of the society we live in.</p> 
     </section>
 
     <section>
@@ -49,7 +49,7 @@ $actorsTable = array(
     </section>
 
     <section>
-    <h2>Newest <?php print count($actorsTable); ?> trends</h2>
+    <h2>Some greatest <?php print count($actorsTable); ?> hits</h2>
         <table>
             <tr>
                 <th>Your Fav Actor/Actress! </th>

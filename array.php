@@ -13,11 +13,11 @@ $NewestTrends = array(
 <main>
 <section>
   <h2>Makin a Comeback</h2>
-  <p>Hard to beleive that some of the most love fashion trends are making a comeback. Crochet Sets! Flared yoga pants! Parachute pants! Ugg Boots! Juicy Couture! You name it.</p>
+  <p>Hard to beleive that some of the most loved fashion trends are making a comeback. Crochet Sets! Flared yoga pants! Parachute pants! Ugg Boots! Juicy Couture! You name it.</p>
 
   <p>Fashion trends come and go, but it is hard to predict how long they will last.  There are several factors that may cause a trend to fade away including current fashion and popularity. However, trends always come back. Nowadays, designers are so often creating new variations of old themes or creating variations on a theme.</p>
 
-  <p>Fashion is ever-changing. Celebrities and models are at the forefront of the fashion indistry. When individuals witness their favorite celebrity wearing a new look, they frequently desire to emulate them. Therefore, they seek out the newest clothing, shoes, jewelry, and so on—in order to seem like the individuals they wish to mimic. Check out some books about the evolution of fashion at <a href="https://editorialist.com/lifestyle/best-fashion-books/" target="blank">https://editorialist.com/lifestyle/best-fashion-books/</a>to learn more!</p>
+  <p>Fashion is ever-changing. Celebrities and models are at the forefront of the fashion indistry. When individuals witness their favorite celebrity wearing a new look, they frequently desire to emulate them. Therefore, they seek out the newest clothing, shoes, jewelry, and so on—in order to seem like the individuals they wish to mimic. Check out some books about the evolution of fashion at <a href="https://editorialist.com/lifestyle/best-fashion-books/" target="blank">https://editorialist.com/lifestyle/best-fashion-books/</a> to learn more!</p>
 </section>
 
 <section>
@@ -31,9 +31,9 @@ $NewestTrends = array(
 <h2>Newest <?php print count($NewestTrends); ?> trends</h2>
     <table>
         <tr>
-            <th>Year it came into style</th>
-            <th>Outfit</th>
-            <th>What to pair it with</th>
+            <th>Year</th>
+            <th>Fit</th>
+            <th>Pairing</th>
             <th>Season</th>
         </tr>
     <?php
