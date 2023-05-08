@@ -124,8 +124,8 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 
 ?>
 
-<main>
-    <h1>Mostly For Our Benefit...</h1>
+     <h1>Mostly For Our Benefit...</h1>
+     <main>
     <section>
         <figure class="rounded">
             <img class="rounded" alt="Faces you should know"
@@ -208,30 +208,30 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
             <fieldset class="radio">
                 <legend>How excited are you for the 2023 MET Gala</legend>
                 <p>
-                    <input type="radio" id="radEnthusiastDefinitely"
-                    name="radEnthusiast" value="Definitely" tabindex="410" 
-                    <?php if($enthusiasm == "Definitely") print 'checked'; ?>
+                    <input type="radio" id="radEnthusiastIcantwait"
+                    name="radEnthusiast" value= "I can't wait!" tabindex="410" 
+                    <?php if($enthusiasm == "I can't wait!") print 'checked'; ?>
                     required>
                     <label class="radio-field"
-                    for="radEnthusiastDefinitely">Definitely</label>
+                    for="radEnthusiastIcantwait">I can't wait!</label>
                 </p>
 
                 <p>
-                    <input type="radio" id="radEnthusiastInterested"
-                    name="radEnthusiast" value="Interested" tabindex="420" 
-                    <?php if($enthusiasm == "Interested") print 'checked'; ?>
+                    <input type="radio" id="radEnthusiastEhnotthatexcited"
+                    name="radEnthusiast" value="Eh, not that excited" tabindex="420" 
+                    <?php if($enthusiasm == "Eh, not that excited") print 'checked'; ?>
                     required>
                     <label class="radio-field"
-                    for="radEnthusiastInterested">Interested</label>
+                    for="radEnthusiastEhnotthatexcited">Eh, not that excited</label>
                 </p>
 
                 <p>
-                    <input type="radio" id="radEnthusiastSoontobe"
-                    name="radEnthusiast" value="Soon to be" tabindex="430" 
-                    <?php if($enthusiasm == "Soon to be") print 'checked'; ?>
+                    <input type="radio" id="radEnthusiastCouldntcareless"
+                    name="radEnthusiast" value="Couldn't care less" tabindex="430" 
+                    <?php if($enthusiasm == "Couldn't care less") print 'checked'; ?>
                     required>
                     <label class="radio-field"
-                    for="radEnthusiastSoontobe">Soon to be</label>
+                    for="radEnthusiastCouldntcareless">Couldn't care less</label>
                 </p>
 
 
@@ -278,3 +278,4 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 <?php
 include 'footer.php';
 ?>
+
