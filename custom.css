@@ -19,8 +19,13 @@
     }
   
   h1{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 170%;
+    padding: 1%;
+    background-color: azure;
+    /*background-image: url(../images/stars.jpg);*/
+    grid-area: header;
+    
   }
   
   h2{
@@ -69,8 +74,8 @@
   nav{
     text-align: center;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 1%;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 1.4%;
     background-color: pink;
     border-bottom: magenta;
     border-top: magenta;
@@ -252,12 +257,11 @@ ol {
 }
 
 .detail main {
-  grid-template-areas: "info2 info1 info3" "info4 info1 info5";
+  grid-template-areas: "info2 info1 info3" "info4 info6 info5";
 }
-  
- h1{
-  background: cornflowerblue;
-  grid-area: header;
+
+.form main {
+  grid-template-areas: "info1" "info3" "info2";
 }
   
   main section:nth-child(1) {
@@ -273,7 +277,15 @@ ol {
   }
 
   main section:nth-child(4) {
-    grid-area: info4
+    grid-area: info4;
+  }
+
+  main section:nth-child(5) {
+    grid-area: info5;
+  }
+
+  main section:nth-child(6) {
+    grid-area: info6;
   }
 
   .activePage{
