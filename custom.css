@@ -1,296 +1,301 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: Cochin; 
-  }
-  
-  body{
-    max-width: 60em;
-    width: 90%;
-    margin: auto;
-    background-color: rgba(255,255,255, .6);
-    grid-template-areas: "nav nav" "header header" "info1 info2" "info3 info4" "footer footer";
+  margin: 0;
+  padding: 0;
+  font-family: Cochin; 
+}
 
-  }
-  
-  html{
-    background-image: url(../images/background.jpg);
-      /*background-color: black;*/
-    }
-  
-  h1{
-    text-transform: capitalize;
-    font-size: 170%;
-    padding: 1%;
-    background-color: azure;
-    /*background-image: url(../images/stars.jpg);*/
-    grid-area: header;
-    
-  }
-  
-  h2{
-    padding: 1em;
-    color: darkblue;
-  }
-  
-  p{
-    text-indent: 5%;
-    padding: 1em;
+body{
+  max-width: 60em;
+  width: 90%;
+  margin: auto;
+  background-color: rgba(255,255,255, .6);
+  grid-template-areas: "nav nav" "header header" "info1 info2" "info3 info4" "footer footer";
+
+}
+
+html{
+  background-image: url(../images/blue.jpg);
+    /*background-color: black;*/
   }
 
-  li{
-    padding: .5em;
-    margin-left: 3em;
-  }
+h1{
+  text-transform: capitalize;
+  font-size: 170%;
+  padding: 1%;
+  background-color: azure;
+  /*background-image: url(../images/stars.jpg);*/
+  grid-area: header;
   
-  img {
-    max-width: 70%;
-    border-radius: 50em;
-    padding: .5em;
-    border: .1em dotted green;
-  }
+}
 
-  nav a:link{
-    color: #009;
-    text-decoration: none;
-  }
+h2{
+  padding: 1em;
+  color: darkblue;
+}
 
-  nav a:visited{
-    text-decoration: none;
-    color: #009;
-  }
-  
-  nav a:hover{
-    background-color: gainsboro;
-    color: plum;
-    text-decoration: underline;
-  }
+p{
+  text-indent: 5%;
+  padding: 1em;
+}
 
-  nav a{
-    padding-top: .5em;
-    padding-bottom: .5em;
-  }
-  
-  nav{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 1.4%;
-    background-color: pink;
-    border-bottom: magenta;
-    border-top: magenta;
-    border-left: magenta;
-    border-right: magenta;
-    grid-area : nav;
-  }
+li{
+  padding: .5em;
+  margin-left: 3em;
+}
+
+img {
+  max-width: 70%;
+  border-radius: 50em;
+  padding: .5em;
+  border: .1em dotted green;
+}
+
+nav a:link{
+  color: #009;
+  text-decoration: none;
+}
+
+nav a:visited{
+  text-decoration: none;
+  color: #009;
+}
+
+nav a:hover{
+  background-color: gainsboro;
+  color: plum;
+  text-decoration: underline;
+}
+
+nav a{
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+nav{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 1.4%;
+  background-color: pink;
+  border-bottom: magenta;
+  border-top: magenta;
+  border-left: magenta;
+  border-right: magenta;
+  grid-area : nav;
+}
 /**
-  header{
-    background: cornflowerblue;
-    grid-area: header;
-  }
+header{
+  background: cornflowerblue;
+  grid-area: header;
+}
 */
-  li{ 
-    list-style-type: square;
-  }
-  
-  ul{
-    display: inline;
-  }
-  
-  table{
-    font-weight: normal;
-    border-collapse: collapse;
-    width: 90%;
-    margin: auto;
-  }
-  
-  table th, td{
-    border-bottom: .2em solid pink;
-    border-left: .2em solid pink;
-    border-right: .2em solid pink;
-    border-top: .2em solid pink;
-    padding: 2em;
-    text-align: center;
-  }
-  
-  table tr:nth-child(even){
-    background-color: #f2f2f2;
-  }
-  
-  table tr:nth-child(odd){
-    background-color: whitesmoke;
-  }
-  
-  table tr:hover{
-    background-color: lightblue;
-  }
-  
-  table tr:nth-child(1){
-    background-color: lavender;
-  }
+li{ 
+  list-style-type: square;
+}
 
-  caption{
-    caption-side: bottom;
-  }
-  
-  li:nth-child(odd){
-    color: darkmagenta;
-  }
-  
-  li:nth-child(even){
-    color: darkblue;
-  }
-  
-  /* form styling */
+ul{
+  display: inline;
+}
+
+table{
+  font-weight: normal;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+
+table th, td{
+  border-bottom: .2em solid pink;
+  border-left: .2em solid pink;
+  border-right: .2em solid pink;
+  border-top: .2em solid pink;
+  padding: .5em;
+  text-align: center;
+}
+
+table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd){
+  background-color: whitesmoke;
+}
+
+table tr:hover{
+  background-color: lightblue;
+}
+
+table tr:nth-child(1){
+  background-color: lavender;
+}
+
+caption{
+  caption-side: bottom;
+}
+
+li:nth-child(odd){
+  color: darkmagenta;
+}
+
+li:nth-child(even){
+  color: darkblue;
+}
+
+/* form styling */
 
 form {
-    background-color: var(--main-bg-color-rgba);
-    border: thin solid black;
-    clear: both;
-    max-width: 30em;
-    margin: auto;
-    padding: 1%
+  background-color: var(--main-bg-color-rgba);
+  border: thin solid black;
+  clear: both;
+  max-width: 30em;
+  margin: auto;
+  padding: 1%
 }
 
 form p {
-    text-indent: 0;
+  text-indent: 0;
 }
 
 fieldset {
-    padding: 1%;
+  padding: 1%;
 }
 
 fieldset.contact {
-    margin-top: -1em;
+  margin-top: -1em;
 
 }
 
 input[type=sumbit] {
-    background: darkblue;
-    color: whitesmoke;
-    font-size: x-large;
-    padding: 1%;
+  background: darkblue;
+  color: whitesmoke;
+  font-size: x-large;
+  padding: 1%;
 }
 
 label {
-    display: block;
+  display: block;
 }
 
 .radio label, 
 .checkbox label {
-    display: inline;
+  display: inline;
 }
 
 .radio legend, 
 .checkbox legend, 
 .contact legend {
-    padding-top: 1.5em;
+  padding-top: 1.5em;
 }
 
 .radio, 
 .checkbox, 
 .contact {
-    background-color:pink;
+  background-color:pink;
 }
 
 .radio input, 
 .checkbox input {
-    width: initial;
+  width: initial;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 textarea {
-    width: 100%;
+  width: 100%;
 }
 
 select {
-    width: 100%;
+  width: 100%;
 }
 
 legend {
-    margin-top: 1%;
+  margin-top: 1%;
 }
 
 img {
-    border-radius: 4px;
-    padding: 5px;
-    border: 2px dotted magenta;
-    width: 90%;
+  border-radius: 4px;
+  padding: 5px;
+  border: 2px dotted magenta;
+  max-width: 90%;
 }
 
 p {
-    text-indent: 3em;
-    padding-bottom: 1em;
+  text-indent: 3em;
+  padding-bottom: 1em;
 }
 
 ol {
-    margin: 1em;
+  margin: 1em;
 }
 
 /** main styling **/
-  
-  main {
-    display: grid;
-    grid-template-areas: "info1 info2" "info3 info4";
-    grid-template-columns: auto auto;
-    grid-gap: 1em
-  }
 
-  /**
-  nav nav 
-  header header 
-  figure1 figure2 
-  info1 info2
-  footer footer
-  /
-  **/
+main {
+  display: grid;
+  grid-template-areas: "info1 info2" "info3 info4";
+  grid-template-columns: auto auto;
+  grid-gap: 1em
+}
+
+/**
+nav nav 
+header header 
+figure1 figure2 
+info1 info2
+footer footer
+/
+**/
 
 .index main {
-  grid-template-areas: "info3 info4" "info2 info1";
+grid-template-areas:
+  "info3 info5"
+  "info4 info4"
+  "info2 info1";
+grid-template-columns: auto auto;
 }
 
 .array main {
-  grid-template-areas: "info1 info2" "info3 info3";
+grid-template-areas: "info1 info2" "info3 info3";
 }
 
 .detail main {
-  grid-template-areas: "info1 info2" "info3 info4" "info5 info6";
+grid-template-areas: "info1 info2" "info3 info4" "info5 info6";
 }
 
 .form main {
-  grid-template-areas: "info1" "info3" "info2";
+grid-template-areas: "info1" "info3" "info2";
 }
-  
-  main section:nth-child(1) {
-    grid-area: info1;
-  }
-  
-  main section:nth-child(2) {
-    grid-area: info2;
-  }
-  
-  main section:nth-child(3) {
-    grid-area: info3;
-  }
 
-  main section:nth-child(4) {
-    grid-area: info4;
-  }
+main section:nth-child(1) {
+  grid-area: info1;
+}
 
-  main section:nth-child(5) {
-    grid-area: info5;
-  }
+main section:nth-child(2) {
+  grid-area: info2;
+  margin-left: 1em;
+}
 
-  main section:nth-child(6) {
-    grid-area: info6;
-  }
+main section:nth-child(3) {
+  grid-area: info3;
+}
 
-  .activePage{
-    border-top: solid black; 
-    border-right: solid black; 
-    border-left: solid black;
-    border-bottom: solid black; 
-  }
+main section:nth-child(4) {
+  grid-area: info4;
+}
+
+main section:nth-child(5) {
+  grid-area: info5;
+}
+
+main section:nth-child(6) {
+  grid-area: info6;
+}
+
+.activePage{
+  border-top: solid black; 
+  border-right: solid black; 
+  border-left: solid black;
+  border-bottom: solid black; 
+}
