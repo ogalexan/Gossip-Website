@@ -28,7 +28,6 @@ function verifyAlphaNum($testString) {
     return (preg_match ("/^([[:alum:]]|-|\.| |\'|&|;|#)+$/", $testString));
 }
 
-
 if($_SERVER["REQUEST_METHOD"] == 'POST'){
     print PHP_EOL . '<!-- Starting Sanitiation -->' . PHP_EOL;
      
@@ -47,10 +46,10 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     $dataIsGood = true;
 
     if($met == ''){
-        $errorMessage .= '<p class="mistake">Please choose an experience level</p>';
+        $errorMessage .= '<p class="mistake">Please choose how enthusiastic you are</p>';
         $dataIsGood = false;
     }elseif(!in_array($met, $metnames)){
-        $errorMessage .= '<p class="mistake">Please choose an experience level</p>';
+        $errorMessage .= '<p class="mistake">Please choose how enthusiastic you are</p>';
         $dataIsGood = false;
     } 
     if($name == ''){
@@ -75,8 +74,8 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
         $dataIsGood = false;
     }
 
-    if ($enthusiasm != "Definitely" AND $enthusiasm != "Interested" AND $enthusiasm != "Soon to be"){
-        $errorMessage .= '<p class="mistake">Please let us know enthusiastic you are about Snowboarding!</p>';
+    if ($enthusiasm != "Icantwait" AND $enthusiasm != "Ehnotthatexcited" AND $enthusiasm != "Couldntcareless"){
+        $errorMessage .= '<p class="mistake">Please let us know enthusiastic you are about the 2023 Met Gala!</p>';
         $dataIsGood = false;
     }
 
