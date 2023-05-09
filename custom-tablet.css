@@ -1,6 +1,6 @@
 main {
-    /*grid-template-areas: "box1 box1" "box4 box2" "box3 box3" */
-    grid-template-areas: "box1" "box4" "box2" "box3";
+    /*grid-template-areas: "box1 box1" "box4 box2" "box3 box3" 
+    grid-template-areas: "box1" "box4" "box2" "box3"; */
     grid-template-columns: auto;
     padding-bottom: 2em;
 }
