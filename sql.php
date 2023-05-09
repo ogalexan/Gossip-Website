@@ -29,7 +29,27 @@ VALUES
     ('Florence Pugh', 'Nope!','Rachel','ramster@uvm.edu','Low by SZA','So excited','Fashion Trends')
 </pre>
  
-</main>
-<?php
-include 'footer.php'; 
-?>
+<pre>
+CREATE TABLE tblNewestTrends (
+    pmkNewestTrends INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    fldYear varchar(10),
+    fldFit varchar(30),
+    fldPairing varchar(30),
+    fldSeason varchar(30),
+)
+</pre>
+
+<h2>Insert Data</h2>
+<pre>
+INSERT INTO tblNewestTrends (fldYear, fldFit, fldPairing, fldSeason) VALUES
+('1970', 'Crochet Set','Sandals or sneakers, very versatile', 'Summer'),
+('1990', 'Flared yoga pants','Sneakers','Fall, Winter, Spring'),
+('1980','Parachute pants','Sneakers or even some heels for a night out','Fall, Winter, Spring'),
+('2000','Ugg Boots','Anything! Maybe some flared pants could look cute', 'Fall and Winter'),
+('1990','Juicy Couture','A pair of jeans', 'Winter')
+</pre>
+
+<h2>Select records</h2>
+<pre>
+SELECT fldYear, fldFit, fldPairing, fldSeason FROM tblNewestTrends
+</pre>
