@@ -6,8 +6,8 @@ include 'top.php';
 
 <h2>Create table lab 9 form</h2>
 <pre>
-CREATE TABLE tblActorActress(
-    pmkActorActress INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE tblCelebritySurvey(
+    pmkCelebritySurvey INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     fldMetGlam varchar(30) DEFAULT NULL,
     fldAnyGos varchar(30) DEFAULT NULL,
     fldFirstName varchar(50) DEFAULT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE tblActorActress(
 
 <h2>Insert record</h2>
 <pre>
-INSERT INTO tblRecyclingInVermont  
+INSERT INTO tblCelebritySurvey
     (fldMetGlam, fldAnyGos, fldFirstName, fldEmail, fldDrive, fldExcitment, fldFashionTrends, fldLoveInterests, fldMusicScene, fldCapitolHill)
 VALUES
     ('Florence Pugh', 'Nope!','Rachel','ramster@uvm.edu','Low by SZA','So excited','Fashion Trends')
@@ -53,3 +53,8 @@ INSERT INTO tblNewestTrends (fldYear, fldFit, fldPairing, fldSeason) VALUES
 <pre>
 SELECT fldYear, fldFit, fldPairing, fldSeason FROM tblNewestTrends
 </pre>
+
+</main>
+<?php
+include 'footer.php';
+?>
