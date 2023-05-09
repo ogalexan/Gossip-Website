@@ -166,10 +166,12 @@ fieldset.contact {
 }
 
 input[type=sumbit] {
-  background: darkblue;
-  color: whitesmoke;
-  font-size: x-large;
-  padding: 1%;
+  display: grid;
+  background-color: lavender;
+  color: black;
+  padding: .5em;
+  margin: 1%;
+  cursor: pointer;
 }
 
 label {
@@ -185,12 +187,6 @@ label {
 .checkbox legend, 
 .contact legend {
   padding-top: 1.5em;
-}
-
-.radio, 
-.checkbox, 
-.contact {
-  background-color:pink;
 }
 
 .radio input, 
