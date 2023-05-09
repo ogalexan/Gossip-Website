@@ -31,7 +31,7 @@ function verifyAlphaNum($testString) {
 if($_SERVER["REQUEST_METHOD"] == 'POST'){
     print PHP_EOL . '<!-- Starting Sanitiation -->' . PHP_EOL;
      
-    $experience = getData('lstExperiences');
+    $met = getData('lstMet');
     $name = getData('txtFirstName');
     $email = getData('txtEmail');
     $song = getData('txtSong');
