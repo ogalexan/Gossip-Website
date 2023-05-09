@@ -31,7 +31,7 @@ function verifyAlphaNum($testString) {
 if($_SERVER["REQUEST_METHOD"] == 'POST'){
     print PHP_EOL . '<!-- Starting Sanitiation -->' . PHP_EOL;
      
-    $met = getData('lstMet');
+    $met = getData('lstMET');
     $name = getData('txtFirstName');
     $email = getData('txtEmail');
     $song = getData('txtSong');
@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     if($song == ''){
         $errorMessage .= '<p class="mistake">Please enter your song</p>';
         $dataIsGood = false;
-    }elseif(!verifyAlphaNum($name)){
+    }elseif(!verifyAlphaNum($song)){
         $errorMessage .= '<p class="mistake">Your song contains invalid characters, please use letters</p>';
         $dataIsGood = false;
     }
@@ -100,11 +100,12 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
 
     print '<!-- Starting Saving -->';
     if($dataIsGood) {
-        $sql = 'INSERT INTO tblSnowboardSurvey
-        (fldExperience, fldName, fldEmail, fldSong, fldEnthusiast, fldPark, fldSpeed, fldTurns, fldJumps)';
-        $sql .= ' VALUES (?,?,?,?,?,?,?,?,?)';
+        $sql = 'INSERT INTO tblCelebritySurvey
+    (fldMetGlam, fldAnyGos, fldFirstName, fldEmail, fldDrive, fldExcitment, fldFashionTrends, fldLoveInterests, fldMusicScene, fldCapitolHill)';
+    $sql .= ' VALUES (?,?,?,?,?,?,?,?,?)';
 
-        $data = array($experience, $name, $email, $song, $enthusiasm, $improvePark, $improveSpeed, $improveTurns, $improveJumps);
+
+        $data = array($met, $name, $email, $song, $enthusiasm, $seeFashion, $seeLove, $seeMusic, $seeCapitol);
 
         try{
             $statement = $pdo->prepare($sql);
