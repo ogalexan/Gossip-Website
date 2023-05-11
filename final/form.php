@@ -105,7 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
     $sql .= ' VALUES (?,?,?,?,?,?,?,?,?)';
 
 
-        $data = array($met, $name, $email, $song, $enthusiasm, $seeFashion, $seeLove, $seeMusic, $seeCapitol);
+        $data = array($met, $experience, $name, $email, $song, $enthusiasm, $seeFashion, $seeLove, $seeMusic, $seeCapitol);
 
         try{
             $statement = $pdo->prepare($sql);
@@ -187,7 +187,7 @@ if($_SERVER["REQUEST_METHOD"] == 'POST'){
                     <label class="required" for="txtFirstName">First Name</label>
                     <input id="txtFirstName" maxlength="30"
                     name="txtFirstName" onfocus="this.select()"
-                    tabindex="300" type="text" values="<?php print $name; ?>"required>
+                    tabindex="300" type="text" values="<?php print $name; ?>" required>
                 </p>
 
                 <p>
