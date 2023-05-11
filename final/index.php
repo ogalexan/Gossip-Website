@@ -35,10 +35,25 @@ $actorsTable = array(
 
         <ol>
             <li>Veep</li>
+            <ol>
+                    <li>A comedy series about the Vice President of the United States. Each episode follows her day-to-day life as she puts out political fires.</li>
+            </ol>
             <li>The West Wing</li>
+            <ol>
+                    <li>A drama that follows the inside lives of staffers in the West Wing of the White House.</li>
+            </ol>
             <li>The Wire</li>
+            <ol>
+                    <li>A drama about crime, law enforcement, politics, education and media in Baltimore as it follows a team of cops and the criminals they are after.</li>
+            </ol>
             <li>Parks and Recreation</li>
+            <ol>
+                    <li>An American political satire sitcom about the antics of an Indiana town's public officials as they pursue projects to make their city a better place.</li>
+            </ol>
             <li>The Good Fight</li>
+                <ol>
+                    <li>A hysterical legal drama about lawyers at the end of history.</li>
+            </ol>
             <li>House of Cards</li>
             <ol>
                 <li>Betrayed by the White House, Congressman Frank Underwood embarks on a ruthless rise to power. Blackmail, seduction and ambition are his weapons.</li>
@@ -67,7 +82,6 @@ $actorsTable = array(
             <ol>
                 <li>Amid an international crisis, a career diplomat juggles her new high-profile job as ambassador to the UK and her turbulent marriage.</li>
             </ol>
-
 
         </ol>
     </section>
