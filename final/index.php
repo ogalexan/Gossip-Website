@@ -106,7 +106,7 @@ $actorsTable = array(
     }
     ?>
             <tr>
-                <td colspan="5"><cite>Data from IMbD<a href="https://www.imdb.com/news/ni63707932" target="blank">Editors Picks</cite></a>
+                <td colspan="5"><cite>Data from IMbD<a href="https://www.imdb.com/news/ni63707932" target="blank">Editors Picks</a></cite>
             </tr>
     </table>
 </section>
@@ -115,8 +115,10 @@ $actorsTable = array(
         <h3></h3>
         <figure class="rounded">
             <img class="rounded" alt="Veep" src="images/veep.jpg">
-            <figcaption><a
-            target="_blank">Veep Propaganda</a></figcaption>
+            <cite><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%
+            2Ftitle%2Ftt1759761%2F&psig=AOvVaw2TAFHUZBmLql5_EJ2W0bqy&ust=1683910187425000&source=
+            images&cd=vfe&ved=0CBAQjRxqFwoTCKCa1bbc7f4CFQAAAAAdAAAAABAE"
+            target="_blank">Veep Propaganda</a></cite>
         </figure>
     </section>
 
