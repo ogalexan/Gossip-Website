@@ -17,6 +17,10 @@ main{
     grid-template-areas: "info1" "info2" "info3" "info4" "info5" "info6";
 }
 
+.index main{
+    grid-template-areas: "info1" "info2" "info3" "info4" "info5" "info6";
+}
+
 .detail main{
     grid-template-areas: "info1" "info2" "info3" "info4" "info5" "info6";
 }
