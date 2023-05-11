@@ -34,35 +34,42 @@ $actorsTable = array(
         <p>Here's a list of some classic political movies and tv shows.</p>
 
         <ol>
-            <li>Veep
-                <ol>
-                    <li>A comedy series about the Vice President of the United States. Each episode follows her day-to-day life as she puts out political fires.</li>
+            <li>Veep</li>
+            <li>The West Wing</li>
+            <li>The Wire</li>
+            <li>Parks and Recreation</li>
+            <li>The Good Fight</li>
+            <li>House of Cards</li>
+            <ol>
+                <li>Betrayed by the White House, Congressman Frank Underwood embarks on a ruthless rise to power. Blackmail, seduction and ambition are his weapons.</li>
             </ol>
-        </li>
-        <ol>
-            <li>The West Wing
-                <ol>
-                    <li>A drama that follows the inside lives of staffers in the West Wing of the White House.</li>
+            <li>Deadwood</li>
+            <ol>
+                <li>"Deadwood" is set in a mining town that was not part of any U.S. state or territory in the post-Civil War years, and thus was literally lawless.</li>
             </ol>
-        </li>
-        <ol>
-            <li>The Wire
-                <ol>
-                    <li>A drama about crime, law enforcement, politics, education and media in Baltimore as it follows a team of cops and the criminals they are after.</li>
+            <li>The Expanse</li>
+            <ol>
+                <li>Rising tensions between Earth and Mars have put them on the brink of war. Against this backdrop, a hardened detective and a rogue ship's captain come together to investigate the case of a missing young woman</li>
             </ol>
-        </li>
-        <ol>
-            <li>Parks and Recreation
-                <ol>
-                    <li>An American political satire sitcom about the antics of an Indiana town's public officials as they pursue projects to make their city a better place.</li>
+            <li>Battlestar Galactica</li>
+            <ol>
+                <li>This update of the late-1970s programme takes a decidedly darker tone as what's left of humankind struggles for survival against the robot Cylons, who have killed millions</li>
             </ol>
-        </li>
-        <ol>
-            <li>The Good Fight
-                <ol>
-                    <li>A hysterical legal drama about lawyers at the end of history.</li>
+            <li>Show Me a Hero</li>
+            <ol>
+                <li>Tells the story of how civil rights violations tear apart Yonkers, N.Y., paralyze the municipal government, and forever change the lives of a rising politician and his constituents</li>
             </ol>
-        </li>
+            <li>Designated Survivor</li>
+            <ol>
+                <li>A low-level Cabinet member becomes President of the United States after a catastrophic attack kills everyone above him in the line of succession.</li>
+            </ol>
+            <li>The Diplomat</li>
+            <ol>
+                <li>Amid an international crisis, a career diplomat juggles her new high-profile job as ambassador to the UK and her turbulent marriage.</li>
+            </ol>
+
+
+        </ol>
     </section>
 
     <section>
@@ -85,19 +92,19 @@ $actorsTable = array(
     }
     ?>
             <tr>
-                <td colspan="5"><cite>Data from IMbD <a href="https://www.imdb.com/news/ni63707932" target="blank">Editors Picks</cite></a>
+                <td colspan="5"><cite>Data from IMbD<a href="https://www.imdb.com/news/ni63707932" target="blank">Editors Picks</cite></a>
             </tr>
     </table>
 </section>
 
 <section>
-    <h3></h3>
-    <figure class="rounded">
-        <img class="rounded" alt="Veep" src="images/veep.jpg">
-        <figcaption><a
-        target="_blank">Veep Propaganda</a></figcaption>
-</figure>
-</section>
+        <h3></h3>
+        <figure class="rounded">
+            <img class="rounded" alt="Veep" src="images/veep.jpg">
+            <figcaption><a
+            target="_blank">Veep Propaganda</a></figcaption>
+        </figure>
+    </section>
 
 </main>
 
